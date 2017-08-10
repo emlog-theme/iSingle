@@ -1,0 +1,188 @@
+@charset "utf-8";a,b,blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,i,input,p,pre,td,textarea,th,ul{margin:0;text-decoration:none;list-style-type:none;-webkit-text-size-adjust:none}
+html{overflow-x:hidden;}
+body{cursor:url(images/miku1.png),auto;margin:0;overflow:hidden;background: #f1f1f1;font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;}
+a,i,a:visited {text-decoration: none;cursor:url(images/miku2.png),auto;}
+a{color: #333;}
+a:hover {color: #0cc;}
+::selection {background: #0cc;color: #fff;text-shadow: none;}
+::-moz-selection {background: #0cc;color: #fff;text-shadow: none;}
+::-webkit-scrollbar-thumb {height: 30px;outline: 0px solid #fff;outline-offset: -2px;border: 0px solid #fff;-webkit-border-radius: 1px;background-color: #33363B;}
+::-webkit-scrollbar-thumb:hover {height: 30px;-webkit-border-radius: 1px;background-color: #0cc;}
+::-webkit-scrollbar {width: 8px;height: 3px;}
+::-webkit-scrollbar-track-piece {-webkit-border-radius: 0;background-color: #fff;}
+.contents{max-width:800px;margin:0 auto;position:relative;padding: 20px 0 20px 0;}
+.pjax{width: 100%;}
+.content{width: 100%;background: #fff;animation: sidebar 1s;}
+/*导航*/
+.header{display:none;width:100%;padding:0;background:#fff}
+.header .menu {white-space:nowrap; overflow-y: hidden; -webkit-overflow-scrolling: touch;padding: 1rem 0;text-align: center;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #f2f2f5;}
+.header .menu::-webkit-scrollbar {width: 0px;height: 0px;}
+.header .menu ul{padding:0 10px;}
+.header .menu li,.footer .menu li {display:inline-block;margin:0 1rem 0 0;position:relative;line-height:1rem;}
+.header .menu li:after,.footer .menu li:after{content:'';width:2px;height:2px;background:#CCD1D9;position:absolute;right:-.6rem;top:.5rem;margin:-1px;}
+.header .menu li:last-child:after,.footer .menu li:last-child:after{margin:0;display:none;}
+
+@font-face {
+	font-family:iconfont;src:url(../Single/fonts/iconfont.eot?t=1461591491);src:url(fonts/iconfont.eot?t=1461591491#iefix) format('embedded-opentype'),url(../Single/fonts/iconfont.woff?t=1461591491) format('woff'),url(../Single/fonts/iconfont.ttf?t=1461591491) format('truetype'),url(../Single/fonts/iconfont.svg?t=1461591491#iconfont) format('svg')
+}
+.iconfont {
+	font-family: iconfont;
+	font-style: normal
+}
+.icon-menu:before {
+	content: "\e628"
+}
+#settingTheme{color:#656D78;top: -16px;right: 20px;text-align:center;width:32px;height:32px;font-size:20px;line-height:32px;position:absolute;cursor:pointer;background:#fff;box-shadow:0 2px 3px rgba(50, 116, 255, 0.1);border-radius:100%;transition: .3s;z-index:999;}
+#settingTheme:hover{top:10px;}
+.bg-fixed {	width: 100%;height: 250px;background: url(images/bg_fixed.png) repeat}
+.about-me{display: inherit;background: url(images/bg.jpg) center center no-repeat;background-size: cover;height: 250px;}
+.avatar-450{width: 30%;max-width: 80px;height: auto;border-radius: 100%;border: 1px solid #eee;}
+.profile .info h1,.profile p{color: rgba(0,0,0,.6);width:100%;display:block;overflow:hidden;text-overflow:ellipsis;margin: 0 0 15px;    font-size: 13px;}
+.profile .info h1{font-size:30px;color:#fff;word-break:break-all;font-family: "Exo 2", "Trebuchet MS","Helvetica","Arial",'PingFang SC','Hiragino Sans GB','STHeiti Light','Microsoft YaHei','SimHei','WenQuanYi Micro Hei',sans-serif;}
+.profile .info{display:inline-block;vertical-align:top;letter-spacing:0;width:60%;padding-left:15px;}
+.online{color:#fff;font-size:12px;padding-left:5px;font-weight:100}
+.profile{margin: -60px auto 20px;}
+.search{width: 100%;border: 0px solid #E6E9ED;line-height: 25px;display: inline-block;font-size: .8rem;outline: none;-webkit-appearance: none;}
+/**********列表部分***********/
+.log,.emlog{width: 100%;display: inline-block;font-size: 14px;line-height: 20px;}
+.log li{margin: 0px 15px 30px;border-width: 1px;border-style: solid;border-color: #f2f2f5;-webkit-transition:.3s;transition:.3s;}
+.log li:hover{-webkit-box-shadow:0 10px 20px rgba(0,0,0,.15);box-shadow:0 10px 20px rgba rgba(0,0,0,.15);-webkit-transform:translateY(-.25rem);-moz-transform:none;transform:translateY(-.25rem)}
+.panel {background: #fff;padding: 20px;position: relative}
+.panel p{color: #999;font-size: 15px;line-height:30px;letter-spacing:.5px;overflow: hidden;max-height: 120px;}
+.panel header {line-height: 38px;margin: 0px 0px 10px}
+.panel header h3 {font-weight: normal;font-size: 25px;line-height: 38px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.thumbnail img {display: block;width: 100%;height: 250px}
+.panel-box {width: 100%;color: #ccd1d9;margin: 10px 0 0;font-size: 12px;/*text-align: center;*/}
+/*翻页*/
+.reade_more{text-align:center;margin:10% 0}
+.reade_more a{box-shadow:0 0 0 1px #f2f2f5 inset;background:#Fff;padding:10px 5%;border-radius:20px;transition:.3s;margin: 0 8px;}
+.reade_more a:hover{background:#0cc;color:#fff;padding:10px 10%;}
+/*文章内容页*/
+#banner {margin: 3% 0 30px;}
+#banner h1 {margin:0 0 10px 0;border-bottom: 0;color: #333;font-size: 30px;}
+#banner h1:before,#banner h1:after {display:none;}
+#banner #info {margin:0;padding:0;position:relative;background:none;}
+#banner #info:before {content:'';position:absolute;top:0;left:0;right:0;height:2px;background:#000;background-image:linear-gradient(to right,#000,#fff);}
+#banner #info li {display:inline-block;margin:0;padding:0 2% 0 0;font-size:12px;color: #999;}
+.echolog{margin-top:16px;padding-right:10px;padding-left:10px;color:#333;letter-spacing:.5px;font-size:14px;line-height:1.9;overflow: hidden;}
+.echolog h2{font-weight:500;font-size:1.2rem;line-height:30px}
+.echolog .date{margin-left:-5px;color:#999;font-size:12px;line-height:40px}
+.echolog .date i{padding:0 5px;color:#ccc;font-size:12px}
+.echolog .date a{color:#999;font-size:12px}
+.adjacent-post{margin-top:50px;margin-bottom:50px;padding:1em 0;height:25px;border-top:1px solid #eee}
+.previous{float:left;width:50%;text-align:left}
+.next{float:right;width:50%;text-align:right}
+.tag{margin:30px 0;font-size:12px;height: 35px;}
+.tag a{background-color: #ccc;display: block;float: left;margin: 5px;padding: 0 10px;border-radius: 2px;height: 25px;line-height: 25px;font-size: 12px;color: #fff;}
+.tag a:hover{background:#0cc;color:#fff}
+.echolog img{float:none;display:block;margin:15px auto;height:auto;max-width:100%;}
+.echolog .img{box-shadow: 0 15px 30px rgba(0,0,0,0.2);}
+.echolog a{text-decoration:none}
+.echolog p{margin:10px 10px 10px;font-size: 15px;}
+.echolog h1,.echolog h2{margin-top:8px;margin-bottom:8px;border-bottom:1px dashed #ddd;color:#737373}
+.echolog h3,.echolog h4{margin-top:8px;margin-bottom:8px;color:#737373}
+.echolog h1:before,.echolog h2:before{margin-right:5px;color:#FF6D6D;content:"[";font-size:25px}
+.echolog h3:before,.echolog h4:before{margin-right:5px;color:#FF6D6D;content:"#";font-size:15px}
+.echolog h1:after,.echolog h2:after{margin-left:5px;color:#FF6D6D;content:"]";font-size:25px}
+.echolog blockquote{margin:20px 0;padding:10px 20px;border-left:3px solid #333;background:rgba(160,160,160,.1)}
+.echolog ol,.emcon .echolog ul{margin:10px 0;padding:10px 40px;background:rgba(160,160,160,.1);overflow:auto;}
+.echolog ol li{list-style-type:decimal}
+.echolog ul li{list-style-type:disc}
+.echolog strong{padding:0 2px;border-radius:3px;color:#000;font-weight:700}
+.echolog hr{margin:50px 30%;height:1px;border:none;background:rgba(160,160,160,.1)}
+.echolog pre code{display:block;overflow:auto;margin:1em 0;padding:1em;max-height:18em;border-radius:0;background:#333;white-space:pre-wrap;word-wrap:break-word;font-size:14px;line-height:26px}
+.echolog code{padding:2px 4px;border-radius:3px;background:#eee;box-shadow:0 0 0 1px rgba(0,0,0,.1) inset;color:#2aa}
+.echolog code{font-family:Verdana,"Courier New","Trebuchet MS",Helvetica,sans-serif}
+.echolog table{margin:0 0 20px;width:100%;border-collapse:collapse;border-right:1px solid #504F4F;border-bottom:1px solid #504F4F;border-spacing:0}
+.echolog th{font-weight:700;font-size:14px}
+.echolog th,.emcon .echolog td{padding:6px 10px 6px 6px;border-top:1px solid #504F4F;border-left:1px solid #504F4F}
+.echolog dl{margin:0 20px}
+.echolog dt{font-weight:700}
+.echolog dd{margin:0 0 20px}
+
+/*评论*/
+.comment-k{width:100%;}
+.comment-header{margin:15px 0 15px 0;font-size: 20px;border-bottom: 1px solid #eee;}
+.comment-post{clear:both}
+.comment-post p{margin:5px 0}
+.comment-post .cancel-reply{float:right;padding-right:10%;font-size:12px;cursor:pointer}
+.comment-post .cancel-reply:hover{text-decoration:underline}
+.comment-post small{color:#999;font-size:12px}
+.comment-post input{padding:5px 5px;width:calc(100% - 10px);border:0;color:#333;font-size:15px;background:#f1f1f1;height: 25px;}
+.comment-post #comment{max-width:calc(100% - 10px);width:calc(100% - 10px);padding: 5px;border:0;color:#333;font-size:15px;background: #f1f1f1;}
+.comment-post #comment_submit{width:100%;height:32px;background:#f1f1f1;color:#333;text-align:center;cursor:url(images/miku2.png),auto}
+.comment-post #comment_submit:hover{background:#0cc;color:#fff}
+.comment-post .input{width:100px}
+#comment-place{width:100%;}
+.comment{overflow:hidden;margin:10px 0;height:100%;color:#333;font-size:12px;zoom:1}
+.comment span{color:#0cc}
+.comment .comment-time{display:inline;color:#999;font-size:10px}
+.comment .avatar{float:left;margin:5px}
+.comment .comment-info{float:left;width:100%;border-bottom: 1px dashed #eaeaea;margin: 10px 0;padding: 0 0 10px 0;}
+.comment .comment-info b{font-size: 15px;}
+.comment .comment-content{margin:8px 0 0 0;font-size: 15px;}
+.comment .comment-reply{float:right;display:block;margin-left:10px;padding:0 6px;border-radius:3px;background-color:#ccc;color:#FFF;text-transform:uppercase;font-size:12px;font-family:PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;line-height:20px}
+.comment .comment-reply:hover{background-color:#0cc}
+.comment-children{clear:both;margin-left:auto;padding:0;width:95%;border:none}
+.comment .comment-post{margin:15px auto;width:90%}
+.comment .avatar img{margin:0;width:50px;height:50px;border-radius:50px;-webkit-transition:opacity .15s ease-out;-moz-transition:opacity .15s ease-out;transition:opacity .15s ease-out;box-shadow: 0 0px 0px rgba(0,0,0,0);}
+/*******底部***********/
+.footer{width: 100%;border-top: 1px solid #eee;display: inline-block;text-align: center;background:#fafafa;padding: 15px 0;}
+.footer .right_web{width: 100%;text-align: center;float: right;}
+.footer .right_web p{line-height:24px;font-size:13px;color:#999;font-weight:100;}
+.footer .right_web p a{font-size:13px;color:#999;text-shadow: 0 0 1px #eee;}
+.footer .right_web p a:hover {color: #0cc;}
+.back2top{position:fixed;right:2%;bottom:15%;z-index:3;display:none;width:35px;height:35px;border-top-right-radius:22px;border-bottom-right-radius:22px;border-bottom-left-radius:22px;background:#0cc;box-shadow:0 1px 1px rgba(0,0,0,.2);cursor:pointer;cursor:url(images/miku2.png),auto;-webkit-transition:all ease .4s;-moz-transition:all ease .4s;-o-transition:all ease .4s;transition:all ease .4s;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);-ms-transform:rotate(45deg)}
+/*   时间轴  */
+.time-p{margin-top:10px;font-size:16px}
+#timeline{position:relative;margin:10px auto;padding: 0 10px;}
+#timeline .timeline-item{position:relative;border-bottom:1px dashed #ECECEC}
+#timeline .timeline-item .timeline-content{padding:10px;width:auto;background:#fff}
+#timeline .timeline-item .timeline-content h2{color:#ccc;font-weight:500}
+/*links*/
+.links{margin: 50px 0;}
+.links ul{display:inline-block;margin:0;padding:0;width:100%;list-style:none;}
+.links ul li{position:relative;float:left;overflow:hidden;margin:4px 4px;padding:10px 30px;width:calc(100% / 3 - 70px);border:1px solid #ECECEC;-webkit-transition:all .3s;transition:all .3s;}
+.links ul li:hover{border:1px solid #0cc;border-radius: 30px;}
+.sitename{display:block;padding-bottom:10px;color:#0cc;-webkit-transition:all .3s;transition:all .3s;}
+.linkdes{overflow:hidden;padding:10px 0;border-top:1px dashed #ddd;color:#949494;text-overflow:ellipsis;white-space:nowrap;font-size:13px;line-height:25px;-webkit-transition:all .5s;transition:all .5s;}
+/*archives*/
+#archives-temp {margin: 50px 0;position: relative;padding: 0 10px;}
+#archives-temp h3{margin: 15px 0;color:#333;font-size: 20px;}
+#archives-temp h3:before{margin-right:5px;color:#0cc;content:"#";font-size:15px}
+.brick {color: #333;padding: 15px;display: block;font-size: 18px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;border-bottom: 1px solid #f0f2f7;}
+/* 动画 */
+@keyframes ball-beat {50% {opacity: 0;transform: scale(0.75); }100% {opacity: 1;transform: scale(1); } }
+@-webkit-keyframes ball-beat {50% {opacity: 0;-webkit-transform: scale(0.75);}100% {opacity: 1;-webkit-transform: scale(1);} }
+@-moz-keyframes ball-beat {50% {opacity: 0;-moz-transform: scale(0.75);}100% {opacity: 1;-moz-transform: scale(1);} }
+body{opacity:1;}
+.load body{opacity:.3;}
+.load:before{content:"";line-height:0;position:fixed;left:-100%;width:100%;height:2px;background:#f55;display:block;z-index:9;animation: load 1s -0.1s ease-in-out infinite;-webkit-animation: load 1s .1s ease-in-out infinite;-moz-animation: load 1s -0.1s ease-in-out infinite;}
+@keyframes load {0% {left:-100%;}100% {left:100%;}}
+@-webkit-keyframes load {0% {left:-100%;}100% {left:100%;}}
+@-moz-keyframes load {0% {left:-100%;}100% {left:100%;}}
+
+
+#pic-wall {margin:20px 0; width: 100%;position: relative}
+#pic-wall .pici{margin: 5px;display: inline-block;width: calc(100% / 3 - 12px);border: 1px solid #f1f1f1;}
+#pic-wall .pici a img{float: none;display: block;margin:0;height: 150px;width: 100%;}
+/*   自适应  */
+@media(max-width:880px){
+.links ul li{width:calc(100% / 2 - 70px);}
+}
+@media only screen and (max-width:680px) {
+.contents{max-width: 100%;width: auto;margin: 0;}
+#pic-wall .pici a img{height: 120px;}
+.thumbnail img {height: 200px}
+.panel p{max-height: 97px;}
+}
+
+@media (max-width:450px){
+#pic-wall .pici{width: calc(100% / 2 - 12px);}
+#pic-wall .pici a img{height: 100px;}
+.thumbnail img {height: 150px}
+.panel p{max-height: 60px;font-size: 14px;}
+.links ul li{width:calc(100% / 1 - 70px);}
+.panel header h3 {font-size: 22px;line-height: 30px;}
+.panel {padding: 10px;}
+}
